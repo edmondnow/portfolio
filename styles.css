@@ -2,6 +2,11 @@ body {
   background-color: #f0f2f5;
 }
 
+a {
+  color: #fddddd;
+  text-decoration: none; /* no underline */
+}
+
 .logo-container {
   display: flex;
   flex-direction: row;
@@ -30,6 +35,10 @@ p,
 h3 {
   font-family: 'Arial';
   font-size: 1.7em;
+}
+
+.description {
+  min-height: 108px;
 }
 
 .name {
@@ -120,10 +129,10 @@ p {
 
 .me-icon {
   color: #989ea6;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+}
+
+.color {
+  color: black;
 }
 
 .me-icon:hover {
