@@ -2,11 +2,80 @@ body {
   background-color: #f0f2f5;
 }
 
+a {
+  color: #fddddd;
+  text-decoration: none; /* no underline */
+}
+
+.card-dividers-container {
+  display: flex;
+}
+
+.dividers-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+.divider {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px solid green;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  box-shadow: 0rem 0.875rem 1.5rem 0rem rgba(32, 46, 66, 0.059);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  left: -25px;
+}
+
+.project-pic {
+  width: 100%;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1em;
+}
+.card-inner {
+  padding: 5px 10px;
+}
+
+.project-card {
+  background-color: white;
+  width: 150px;
+  height: 190px;
+  box-shadow: 0rem 0.875rem 1.5rem 0rem rgba(32, 46, 66, 0.059);
+  border-radius: 3px;
+}
+
 .logo-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.projects-container {
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+  width: 680px;
+  height: 630px;
 }
 
 .cv-container {
@@ -32,6 +101,10 @@ h3 {
   font-size: 1.7em;
 }
 
+.description {
+  min-height: 108px;
+}
+
 .name {
   color: #898e96;
 }
@@ -53,11 +126,9 @@ p {
 
 .card {
   background-color: white;
+  z-index: 1;
   width: 360px;
-  margin-left: 60px;
-  margin-top: 60px;
   box-shadow: 0rem 0.875rem 1.5rem 0rem rgba(32, 46, 66, 0.059);
-
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s; /* Firefox < 16 */
   -ms-animation: fadein 2s; /* Internet Explorer */
@@ -120,10 +191,10 @@ p {
 
 .me-icon {
   color: #989ea6;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+}
+
+.color {
+  color: black;
 }
 
 .me-icon:hover {
