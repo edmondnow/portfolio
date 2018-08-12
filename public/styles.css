@@ -14,24 +14,125 @@ a {
 .dividers-container {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+}
+
+.express {
+  margin-left: 2px;
+  font: 4.5em helvetica neue, open sans, sans-serif;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: 100;
+  font-stretch: normal;
+  font-size: 1.2em;
+  margin-left: 8px;
+  line-height: normal;
+  font-family: 'helvetica neue', 'open sans', sans-serif;
+  font-weight: 100;
+  color: #353535;
+}
+
+.divider-title {
+  opacity: 1;
+  width: 60px;
+  color: #353535;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 0.8em;
+  pointer-events: none;
+}
+
+.composed-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+.logotype1 {
+  width: 80px;
+  pointer-events: none;
+}
+
+.logotype2 {
+  width: 20px;
+  pointer-events: none;
+  margin: 0px 5px 0px 20px;
+  margin-left: 15px;
+}
+
+.reduxlogo {
+  width: 18px;
+}
+
+select-disable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.jquery {
+  /* logotype1 */
+  position: relative;
+  bottom: -5px;
+  width: 70px;
+}
+
+.top1 {
+  z-index: 6;
+}
+
+.top2 {
+  z-index: 5;
+  top: -5px;
+}
+
+.top3 {
+  z-index: 4;
+  top: -10px;
+}
+
+.top4 {
+  z-index: 3;
+  top: -15px;
+}
+
+.top5 {
+  z-index: 2;
+  top: -20px;
+}
+.top6 {
+  z-index: 1;
+  top: -25px;
 }
 
 .divider {
-  width: 100px;
+  width: 120px;
   height: 50px;
+  cursor: pointer;
   display: flex;
+  letter-spacing: 1px;
   align-items: center;
-  justify-content: flex-end;
-  border: 1px solid green;
+  justify-content: center;
   position: relative;
-  -webkit-backface-visibility: hidden;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+
   box-shadow: 0rem 0.875rem 1.5rem 0rem rgba(32, 46, 66, 0.059);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   transition: all 0.3s;
   left: -25px;
+}
+
+.divider-hover {
+  left: 0px;
 }
 
 .project-pic {
@@ -74,7 +175,6 @@ a {
   -ms-animation: fadein 4s; /* Internet Explorer */
   -o-animation: fadein 4s; /* Opera < 12.1 */
   animation: fadein 4s;
-  width: 680px;
   height: 630px;
 }
 
@@ -126,7 +226,7 @@ p {
 
 .card {
   background-color: white;
-  z-index: 1;
+  z-index: 7;
   width: 360px;
   box-shadow: 0rem 0.875rem 1.5rem 0rem rgba(32, 46, 66, 0.059);
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -222,4 +322,8 @@ p {
     #ddefbb,
     #ffeeee
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.product-img {
+  width: 100%;
 }

@@ -17,8 +17,11 @@ class ProjectCard extends Component {
   render() {
     const { name, pic, labels } = this.props;
     return (
-      <div className="project-card" key={name}>
-        <img src={pic} alt={name} className="project-pic" />
+      <div className="project-card">
+        <div
+          dangerouslySetInnerHTML={{ __html: pic }}
+          className="project-pic"
+        />
         <div className="card-inner">
           <h6 className="card-title">{name}</h6>
           <div className="labels-container">{labels.map(label => label)}</div>
