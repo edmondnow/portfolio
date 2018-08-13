@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Modal from 'react-responsive-modal';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/fontawesome-free-brands';
 class ProjectCard extends Component {
   state = {
     open: false
@@ -14,10 +14,47 @@ class ProjectCard extends Component {
     this.setState({ open: false });
   };
 
+  labelRender = labels => {
+    return labels.map(label => {
+      return (
+        <div className={`label-container ${label.toLowerCase()}-label`}>
+          {' '}
+          {label}{' '}
+        </div>
+      );
+    });
+  };
+
   render() {
-    const { name, pic, labels } = this.props;
+    const { name, pic, labels, description, url, github } = this.props;
+    console.log(this.props);
     return (
-      <div className="project-card">
+      <div className="card-labels-container">
+        <div className="project-card">
+          <h1 className="project-title">{name}</h1>
+
+          <p className="project-description">{description}</p>
+          <div className="button-container">
+            <a href={url} className="button">
+              Open
+            </a>
+            <a href={github} className="button github-button">
+              <FontAwesomeIcon icon={faGithub} className="github" size="lg" />
+              <span className="github-span">GitHub</span>
+            </a>
+          </div>
+        </div>
+        <div className="labels-container">{this.labelRender(labels)}</div>
+      </div>
+    );
+  }
+}
+
+export default ProjectCard;
+
+/*
+
+
         <div
           dangerouslySetInnerHTML={{ __html: pic }}
           className="project-pic"
@@ -35,9 +72,5 @@ class ProjectCard extends Component {
             <h2>Simple centered modal</h2>
           </Modal>
         </div>
-      </div>
-    );
-  }
-}
 
-export default ProjectCard;
+        */

@@ -17,10 +17,10 @@ class Projects extends Component {
         <SpringGrid
           component="ul"
           columns={4}
-          columnWidth={150}
-          gutterWidth={60}
-          gutterHeight={30}
-          itemHeight={190}
+          columnWidth={190}
+          gutterWidth={40}
+          gutterHeight={40}
+          itemHeight={210}
           enter={enter}
           entered={entered}
           exit={exit}

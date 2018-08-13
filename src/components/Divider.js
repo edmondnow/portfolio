@@ -43,7 +43,7 @@ class Divider extends Component {
         }
         onClick={this.onClickHandler}
         name={name}
-        style={{ backgroundColor: color, opacity: 0.8 }}
+        style={{ backgroundColor: color }}
       >
         <div
           className="divider-title"

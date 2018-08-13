@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import Card from './Card';
 import Projects from './Projects';
 import Dividers from './Dividers';
@@ -20,6 +21,7 @@ class App extends Component {
           return item.labels.includes(target);
         });
         filteredList = [...filteredItems, ...filteredList];
+        filteredList = _.uniq(filteredList);
       });
     } else {
       filteredList = projectList;
