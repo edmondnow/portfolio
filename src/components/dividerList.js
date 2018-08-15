@@ -12,7 +12,7 @@ export default [
     color: "rgba(116, 185, 255)",
     display: "React",
     open: false,
-    logo: `<div class="composed-logo"><img class="logotype2 select-disable" src=${require("./logos/react.png")}/> React </div>`,
+    logo: `<div class="composed-logo"><img class="logotype2 select-disable" src=${require("./react.png")}/> React </div>`,
     classTop: "top2"
   },
   {
@@ -20,7 +20,7 @@ export default [
     color: "hsla(244, 98%, 80%)",
     display: "React",
     open: false,
-    logo: `<div class="composed-logo"> <img class="logotype2 reduxlogo select-disable" src=${require("./logos/redux.png")}/> Redux </div>`,
+    logo: `<div class="composed-logo"> <img class="logotype2 reduxlogo select-disable" src=${require("./redux.png")}/> Redux </div>`,
     classTop: "top3"
   },
   {
@@ -36,7 +36,7 @@ export default [
     color: "hsla(168, 100%, 36%)",
     display: "MongoDB",
     open: false,
-    logo: `<img class="logotype1 select-disable" src=${require("./logos/mongodb.png")}/>`,
+    logo: `<img class="logotype1 select-disable" src=${require("./mongodb.png")}/>`,
     classTop: "top5"
   },
   {
@@ -44,7 +44,7 @@ export default [
     color: "hsla(11, 90%, 80%)",
     display: "jQuery",
     open: false,
-    logo: `<img class="logotype1 jquery select-disable" src=${require("./logos/jquery.png")}/>`,
+    logo: `<img class="logotype1 jquery select-disable" src=${require("./jquery.png")}/>`,
     classTop: "top6"
   }
 ];

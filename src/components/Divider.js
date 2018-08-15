@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import dividerPics from "./dividerPics";
 
 class Divider extends Component {
   state = {
@@ -33,7 +34,7 @@ class Divider extends Component {
   }
 
   render() {
-    const { name, color, logo, classTop } = this.props;
+    const { name, color, classTop } = this.props;
     return (
       <div
         className={
@@ -45,10 +46,7 @@ class Divider extends Component {
         name={name}
         style={{ backgroundColor: color }}
       >
-        <div
-          className="divider-title"
-          dangerouslySetInnerHTML={{ __html: logo }}
-        />
+        <div className="divider-title">{dividerPics[name.toLowerCase()]}</div>
       </div>
     );
   }

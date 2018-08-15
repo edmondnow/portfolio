@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/fontawesome-free-brands';
+import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/fontawesome-free-brands";
 class ProjectCard extends Component {
   state = {
     open: false
@@ -18,15 +18,15 @@ class ProjectCard extends Component {
     return labels.map(label => {
       return (
         <div className={`label-container ${label.toLowerCase()}-label`}>
-          {' '}
-          {label}{' '}
+          {" "}
+          {label}{" "}
         </div>
       );
     });
   };
 
   render() {
-    const { name, pic, labels, description, url, github } = this.props;
+    const { name, labels, description, url, github } = this.props;
     return (
       <div className="card-labels-container">
         <div className="project-card">
@@ -50,26 +50,3 @@ class ProjectCard extends Component {
 }
 
 export default ProjectCard;
-
-/*
-
-
-        <div
-          dangerouslySetInnerHTML={{ __html: pic }}
-          className="project-pic"
-        />
-        <div className="card-inner">
-          <h6 className="card-title">{name}</h6>
-          <div className="labels-container">{labels.map(label => label)}</div>
-          <button onClick={this.onOpenModal}>Open modal</button>
-          <Modal
-            key={`${name}Modal`}
-            open={this.state.open}
-            onClose={this.onCloseModal}
-            center
-          >
-            <h2>Simple centered modal</h2>
-          </Modal>
-        </div>
-
-        */
