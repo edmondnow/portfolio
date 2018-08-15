@@ -424,6 +424,7 @@ p {
 .me-icon {
   color: #989ea6;
   transition: ease 0.2s;
+  cursor: pointer;
 }
 
 .color {
