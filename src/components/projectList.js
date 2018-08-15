@@ -77,7 +77,7 @@ export default [
     labels: ["jQuery"],
     description: "Tic tac toe game with simple AI.",
     github: "https://github.com/edmondnow/tictactoe",
-    url: "https://codepen.io/edmondnow/pen/wPjgRw"
+    url: "https://codepen.io/edmondnow/pen/RjyKBq"
   },
 
   {
@@ -93,7 +93,7 @@ export default [
     pic: `#000 url(${require("./captures/placeholder.png")})`,
     labels: ["jQuery"],
     description: "Simple calculator.",
-    github: "https://github.com/edmondnow/pomodoro",
+    github: "https://github.com/edmondnow/calculator",
     url: "https://codepen.io/edmondnow/pen/EbLZXW"
   }
 ];
