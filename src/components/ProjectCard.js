@@ -27,7 +27,6 @@ class ProjectCard extends Component {
 
   render() {
     const { name, pic, labels, description, url, github } = this.props;
-    console.log(this.props);
     return (
       <div className="card-labels-container">
         <div className="project-card">

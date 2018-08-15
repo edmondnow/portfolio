@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Divider extends Component {
   state = {
     open: false
   };
   onClickHandler = () => {
-    if (this.props.name === 'All' && this.state.open) {
+    if (this.props.name === "All" && this.state.open) {
       return;
     }
     this.props.changeTarget(this.props.name, !this.state.open);
@@ -13,21 +13,21 @@ class Divider extends Component {
   };
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.name === 'All') {
+    if (this.props.name === "All") {
       this.setState({ open: nextProps.allOpen });
     }
 
     if (
       nextProps.allOpen !== this.props.allOpen &&
       nextProps.allOpen &&
-      this.props.name !== 'All'
+      this.props.name !== "All"
     ) {
       this.setState({ open: false });
     }
   }
 
   componentDidMount() {
-    if (this.props.name === 'All') {
+    if (this.props.name === "All") {
       this.setState({ open: true });
     }
   }
