@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import {
-  CSSGrid,
+  SpringGrid,
   measureItems,
   makeResponsive,
   enterExitStyle
 } from "react-stonecutter";
 import ProjectCard from "./ProjectCard";
 
-const Grid = makeResponsive(measureItems(CSSGrid), {
+const Grid = makeResponsive(measureItems(SpringGrid), {
   maxWidth: 1030,
   minPadding: 100
 });

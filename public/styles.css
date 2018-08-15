@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: #fddddd;
+  color: #fac4c4;
   text-decoration: none; /* no underline */
 }
 
@@ -347,7 +347,7 @@ h3 {
 }
 
 p {
-  color: rgba(152, 158, 166, 0.588);
+  color: rgba(152, 158, 166, 0.9);
   font-size: 0.9em;
   letter-spacing: 0;
   line-height: 1.5em;
@@ -423,6 +423,7 @@ p {
 
 .me-icon {
   color: #989ea6;
+  transition: ease 0.2s;
 }
 
 .color {
