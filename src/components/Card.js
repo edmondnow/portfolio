@@ -7,7 +7,7 @@ import { faLinkedin, faGithub } from "@fortawesome/fontawesome-free-brands";
 const description = key => (
   <Fade key={key} delay={50}>
     <p>
-      I work with the MERN + Jest and Enzyme testing. I'm interested in
+      I work with the MERN stack + Jest and Enzyme testing. I'm interested in
       full-stack, front-end or back-end positions. I'm currently preoccupied
       with learning more on server-side rendering, React Native and DevOps
       tools.
