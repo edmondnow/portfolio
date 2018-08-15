@@ -4,7 +4,7 @@ export default [
     pic: `#000 url(${require("./captures/emaily.PNG")})`,
     labels: ["React", "Redux", "MongoDB", "Express"],
     github: "https://github.com/edmondnow/server-emaily",
-    description: "Survey by email service.",
+    description: "Survey by email service",
     url: "https://survey-emaily.herokuapp.com/"
   },
   {
@@ -27,7 +27,7 @@ export default [
     name: "Goodbooks",
     pic: `#000 url(${require("./captures/goodbooks.PNG")})`,
     labels: ["Express", "MongoDB", "Pug"],
-    description: "Book trading club.",
+    description: "Book trading club",
     github: "https://github.com/edmondnow/book-trading-club",
     url: "https://goodbooks-trading.herokuapp.com/"
   },
@@ -35,7 +35,7 @@ export default [
     name: "Stocks",
     pic: `#000 url(${require("./captures/stocksviewer.PNG")})`,
     labels: ["Express", "Websockets", "Highstocks"],
-    description: "Stock market visualization.",
+    description: "Stock market visualization",
     github: "https://github.com/edmondnow/stockmarket",
     url: "https://stocks-viewer.herokuapp.com/"
   },
@@ -43,7 +43,7 @@ export default [
     name: "Recipe Box",
     pic: `#000 url(${require("./captures/placeholder.png")})`,
     labels: ["React", "Bootstrap"],
-    description: "Stores lists of items.",
+    description: "Stores lists of items",
     github: "https://github.com/edmondnow/recipe-box",
     url: "http://react-recipes-box.herokuapp.com/"
   },
@@ -75,7 +75,7 @@ export default [
     name: "Tic Tac Toe",
     pic: `#000 url(${require("./captures/placeholder.png")})`,
     labels: ["jQuery"],
-    description: "Tic tac toe game with simple AI.",
+    description: "Tic tac toe game with simple AI",
     github: "https://github.com/edmondnow/tictactoe",
     url: "https://codepen.io/edmondnow/pen/RjyKBq"
   },
@@ -84,7 +84,7 @@ export default [
     name: "Simon Says",
     pic: `#000 url(${require("./captures/placeholder.png")})`,
     labels: ["jQuery"],
-    description: "Retro simon says game.",
+    description: "Retro Simon Says game",
     github: "https://github.com/edmondnow/simonsays",
     url: "https://codepen.io/edmondnow/pen/wPjgRw"
   },
