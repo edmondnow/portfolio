@@ -3,13 +3,18 @@ body {
 }
 
 a {
-  color: #fddddd;
+  color: #fac4c4;
   text-decoration: none; /* no underline */
 }
 
 .card-dividers-container {
   display: flex;
   margin-top: 45px;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
 .dividers-container {
@@ -30,7 +35,7 @@ a {
   font-size: 1.2em;
   margin-left: 8px;
   line-height: normal;
-  font-family: 'helvetica neue', 'open sans', sans-serif;
+  font-family: "helvetica neue", "open sans", sans-serif;
   font-weight: 100;
   color: #353535;
 }
@@ -45,7 +50,7 @@ a {
   padding: 7.5px;
   font-size: 0.6em;
   font-weight: 100;
-  font-family: 'Arial';
+  font-family: "Arial";
   text-transform: lowercase;
   box-shadow: 0rem 0.875rem 1.5rem 0rem rgba(32, 46, 66, 0.059);
   background: white;
@@ -225,7 +230,7 @@ a {
 
 .github {
   margin: 5px 5px 5px 0px;
-  font-family: 'Arial';
+  font-family: "Arial";
 }
 
 .github-button {
@@ -250,7 +255,7 @@ a {
   z-index: 2;
   font-size: 1em;
   letter-spacing: 1.5px;
-  font-family: 'Arial';
+  font-family: "Arial";
   text-transform: uppercase;
   font-weight: 80;
   color: #686c6d;
@@ -314,12 +319,12 @@ ul {
   left: 2px;
   pointer-events: none;
   font-size: 0.6em;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 h1,
 p,
 h3 {
-  font-family: 'Arial';
+  font-family: "Arial";
   font-size: 1.7em;
 }
 
@@ -342,7 +347,7 @@ h3 {
 }
 
 p {
-  color: rgba(152, 158, 166, 0.588);
+  color: rgba(152, 158, 166, 0.9);
   font-size: 0.9em;
   letter-spacing: 0;
   line-height: 1.5em;
@@ -361,11 +366,6 @@ p {
   z-index: 7;
   width: 360px;
   box-shadow: 0rem 0.875rem 1.5rem 0rem rgba(32, 46, 66, 0.059);
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -423,6 +423,7 @@ p {
 
 .me-icon {
   color: #989ea6;
+  transition: ease 0.2s;
 }
 
 .color {
@@ -458,4 +459,26 @@ p {
 
 .product-img {
   width: 100%;
+}
+
+@media only screen and (max-width: 1025px) {
+  .card-dividers-container {
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .projects-container {
+    margin: 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .dividers-container {
+    display: none;
+  }
 }
